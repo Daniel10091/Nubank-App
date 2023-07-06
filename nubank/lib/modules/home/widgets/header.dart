@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:nubank/global/utils/colors_standard.dart';
+import 'package:nubank/modules/home/controllers/home_page_controller.dart';
 import 'package:nubank/modules/profile/profile_view.dart';
 
 class Header extends StatefulWidget {
@@ -40,7 +42,7 @@ class _HeaderState extends State<Header> {
       child: Container(
         margin: const EdgeInsets.only(top: 15, left: 20),
         decoration: BoxDecoration(
-          color: primaryColorLight,
+          color: secondaryColor,
           borderRadius: BorderRadius.circular(50),
         ),
         child: IconButton(
@@ -57,14 +59,20 @@ class _HeaderState extends State<Header> {
   _options() {
     return Row(
       children: [
-        IconButton(
-          onPressed: () {},
-          icon: Icon(
-            MdiIcons.eyeOutline,
-            color: whiteColor,
-          ),
-          tooltip: 'Ver saldo',
-        ),
+        GetBuilder<HomePageController>(
+            init: HomePageController(),
+            builder: (homePageController) {
+              return IconButton(
+                onPressed: () => homePageController.showBalance(),
+                icon: Icon(
+                  homePageController.eyesValue
+                      ? MdiIcons.eyeOutline
+                      : MdiIcons.eyeOffOutline,
+                  color: whiteColor,
+                ),
+                tooltip: 'Ver saldo',
+              );
+            }),
         IconButton(
           onPressed: () {},
           icon: Icon(
