@@ -7,26 +7,29 @@ class MyCreditCards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(15),
-      margin: const EdgeInsets.fromLTRB(20, 4, 20, 4),
-      decoration: BoxDecoration(
-        color: grayColor,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Row(
-        children: [
-          Icon(MdiIcons.creditCardOutline, color: blackColor),
-          const SizedBox(width: 12),
-          Text(
-            'Meus Cartões',
-            style: TextStyle(
-              color: blackColor,
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-            ),
-          )
-        ],
+    return GestureDetector(
+      onTap: () {},
+      child: Container(
+        padding: const EdgeInsets.all(15),
+        margin: const EdgeInsets.fromLTRB(20, 4, 20, 4),
+        decoration: BoxDecoration(
+          color: grayColor,
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child: Row(
+          children: [
+            Icon(MdiIcons.creditCardOutline, color: blackColor),
+            const SizedBox(width: 12),
+            Text(
+              'Meus Cartões',
+              style: TextStyle(
+                color: blackColor,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
