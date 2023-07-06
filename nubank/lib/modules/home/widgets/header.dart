@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:nubank/global/utils/colors_standard.dart';
-import 'package:nubank/modules/home/controllers/home_page_controller.dart';
+import 'package:nubank/modules/home/controllers/header_controller.dart';
 import 'package:nubank/modules/profile/profile_view.dart';
 
 class Header extends StatefulWidget {
@@ -59,13 +59,13 @@ class _HeaderState extends State<Header> {
   _options() {
     return Row(
       children: [
-        GetBuilder<HomePageController>(
-            init: HomePageController(),
-            builder: (homePageController) {
+        GetBuilder<HeaderController>(
+            init: HeaderController(),
+            builder: (headerController) {
               return IconButton(
-                onPressed: () => homePageController.showBalance(),
+                onPressed: () => headerController.showBalance(),
                 icon: Icon(
-                  homePageController.eyesValue
+                  headerController.eyesValue
                       ? MdiIcons.eyeOutline
                       : MdiIcons.eyeOffOutline,
                   color: whiteColor,
@@ -95,11 +95,11 @@ class _HeaderState extends State<Header> {
 
   _welcome() {
     return Container(
-      margin: const EdgeInsets.only(left: 30, bottom: 20),
-      child: const Text(
+      margin: const EdgeInsets.only(left: 26, bottom: 20),
+      child: Text(
         'Olá, Daniel',
         style: TextStyle(
-            color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+            color: whiteColor, fontSize: 20, fontWeight: FontWeight.bold),
       ),
     );
   }
