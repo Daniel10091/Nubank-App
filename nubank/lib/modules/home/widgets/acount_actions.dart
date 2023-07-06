@@ -34,7 +34,6 @@ class AccountActions extends StatelessWidget {
       onTap: () {},
       child: Container(
         alignment: Alignment.topLeft,
-        // margin: const EdgeInsets.symmetric(horizontal: 7),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
