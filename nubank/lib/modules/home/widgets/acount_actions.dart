@@ -8,7 +8,7 @@ class AccountActions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 6),
+      margin: const EdgeInsets.only(top: 6, bottom: 12),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Wrap(
@@ -16,14 +16,14 @@ class AccountActions extends StatelessWidget {
             // spacing: 10.0,
             // runSpacing: 10.0,
             children: [
-              SizedBox.fromSize(size: const Size(20, 0)),
+              SizedBox.fromSize(size: const Size(21, 0)),
               _actionIcon(icon: MdiIcons.clover, title: 'Área Pix'),
               _actionIcon(icon: MdiIcons.barcode, title: 'Pagar'),
               _actionIcon(icon: MdiIcons.cash, title: 'Tranferir'),
               _actionIcon(icon: MdiIcons.cash, title: 'Deppositar'),
               _actionIcon(icon: MdiIcons.creditCard, title: 'Recarga'),
               _actionIcon(icon: MdiIcons.heartOutline, title: 'Doação'),
-              SizedBox.fromSize(size: const Size(20, 0)),
+              SizedBox.fromSize(size: const Size(21, 0)),
             ]),
       ),
     );
