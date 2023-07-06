@@ -18,6 +18,7 @@ class _AccountState extends State<Account> {
     return GestureDetector(
       onTap: () {},
       child: Container(
+          height: 108,
           padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

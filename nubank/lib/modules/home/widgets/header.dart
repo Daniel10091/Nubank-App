@@ -17,6 +17,7 @@ class _HeaderState extends State<Header> {
   Widget build(BuildContext context) {
     return Container(
       color: primaryColor,
+      padding: const EdgeInsets.only(top: 20, left: 20, right: 15),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -40,7 +41,6 @@ class _HeaderState extends State<Header> {
     return GestureDetector(
       onTap: () {},
       child: Container(
-        margin: const EdgeInsets.only(top: 15, left: 20),
         decoration: BoxDecoration(
           color: secondaryColor,
           borderRadius: BorderRadius.circular(50),
@@ -58,6 +58,8 @@ class _HeaderState extends State<Header> {
 
   _options() {
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         GetBuilder<HeaderController>(
             init: HeaderController(),
@@ -95,7 +97,7 @@ class _HeaderState extends State<Header> {
 
   _welcome() {
     return Container(
-      margin: const EdgeInsets.only(left: 26, bottom: 20),
+      margin: const EdgeInsets.only(left: 6, bottom: 20),
       child: Text(
         'Olá, Daniel',
         style: TextStyle(
