@@ -16,14 +16,14 @@ class AccountActions extends StatelessWidget {
             // spacing: 10.0,
             // runSpacing: 10.0,
             children: [
-              SizedBox.fromSize(size: const Size(21, 0)),
+              SizedBox.fromSize(size: const Size(20, 0)),
               _actionIcon(icon: MdiIcons.clover, title: 'Área Pix'),
               _actionIcon(icon: MdiIcons.barcode, title: 'Pagar'),
               _actionIcon(icon: MdiIcons.cash, title: 'Tranferir'),
               _actionIcon(icon: MdiIcons.cash, title: 'Deppositar'),
               _actionIcon(icon: MdiIcons.creditCard, title: 'Recarga'),
               _actionIcon(icon: MdiIcons.heartOutline, title: 'Doação'),
-              SizedBox.fromSize(size: const Size(21, 0)),
+              SizedBox.fromSize(size: const Size(20, 0)),
             ]),
       ),
     );
@@ -38,8 +38,8 @@ class AccountActions extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              margin: const EdgeInsets.only(left: 5, right: 5, bottom: 10),
-              padding: const EdgeInsets.all(26),
+              margin: const EdgeInsets.only(left: 6, right: 6, bottom: 10),
+              padding: const EdgeInsets.all(25),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
                 color: grayColor,

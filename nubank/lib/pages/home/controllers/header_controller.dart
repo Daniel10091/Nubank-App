@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:nubank/modules/account/controllers/account_controller.dart';
+import 'package:nubank/pages/account/controllers/account_controller.dart';
 
 class HeaderController extends GetxController {
   String balance =

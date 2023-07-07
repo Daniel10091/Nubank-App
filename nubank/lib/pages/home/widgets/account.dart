@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:nubank/global/utils/colors_standard.dart';
-import 'package:nubank/modules/account/controllers/account_controller.dart';
-import 'package:nubank/modules/home/controllers/header_controller.dart';
+import 'package:nubank/pages/account/controllers/account_controller.dart';
+import 'package:nubank/pages/home/controllers/header_controller.dart';
 
 class Account extends StatefulWidget {
   const Account({super.key});

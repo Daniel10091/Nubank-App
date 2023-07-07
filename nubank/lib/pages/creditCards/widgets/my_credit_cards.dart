@@ -10,8 +10,8 @@ class MyCreditCards extends StatelessWidget {
     return GestureDetector(
       onTap: () {},
       child: Container(
-        padding: const EdgeInsets.all(15),
-        margin: const EdgeInsets.fromLTRB(20, 4, 20, 4),
+        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+        margin: const EdgeInsets.fromLTRB(26, 30, 26, 4),
         decoration: BoxDecoration(
           color: grayColor,
           borderRadius: BorderRadius.circular(12),
@@ -19,7 +19,7 @@ class MyCreditCards extends StatelessWidget {
         child: Row(
           children: [
             Icon(MdiIcons.creditCardOutline, color: blackColor),
-            const SizedBox(width: 12),
+            const SizedBox(width: 20),
             Text(
               'Meus Cartões',
               style: TextStyle(

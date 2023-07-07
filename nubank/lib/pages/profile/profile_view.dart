@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nubank/modules/home/home_view.dart';
+import 'package:nubank/pages/home/home_view.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
