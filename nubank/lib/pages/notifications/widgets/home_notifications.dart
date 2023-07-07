@@ -52,7 +52,7 @@ class HomeNotifications extends StatelessWidget {
             firstTitle,
             style: TextStyle(
               color: firstTitlePrimary ? primaryColor : blackColor,
-              fontSize: 16,
+              fontSize: 15,
               fontWeight: FontWeight.normal,
             ),
           ),
@@ -60,7 +60,7 @@ class HomeNotifications extends StatelessWidget {
             secontTitle,
             style: TextStyle(
               color: secontTitlePrimary ? primaryColor : blackColor,
-              fontSize: 16,
+              fontSize: 15,
               fontWeight: FontWeight.normal,
             ),
           ),

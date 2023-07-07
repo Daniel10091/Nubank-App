@@ -53,7 +53,7 @@ class AccountActions extends StatelessWidget {
               title,
               style: TextStyle(
                 color: blackColor,
-                fontSize: 16,
+                fontSize: 15,
                 fontWeight: FontWeight.bold,
               ),
             ),

@@ -24,7 +24,7 @@ class MyCreditCards extends StatelessWidget {
               'Meus Cartões',
               style: TextStyle(
                 color: blackColor,
-                fontSize: 16,
+                fontSize: 15,
                 fontWeight: FontWeight.bold,
               ),
             )
